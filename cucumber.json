@@ -1,0 +1,20 @@
+{
+  "default": {
+    "dryRun": false,
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "paths": ["e2e-tests/tests/features/**/*.feature"],
+    "require": ["e2e-tests/tests/steps/**/*.ts"],
+    "requireModule": ["ts-node/register"],
+    "format": [],
+    "backtrace":false,
+    "failFast":false,
+    "forceExit":false,
+    "language":"en",
+    "tags":"not @dummy",
+    "order":"defined",
+    "retry":1,
+    "retryTagFilter":"@dummy"
+  }
+}
