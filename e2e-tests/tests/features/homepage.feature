@@ -1,9 +1,8 @@
-Feature: To test Homepage functionality
+Feature: To test login functionality
 
-  Scenario: To test the Homepage
-    Given a user is on the Homepage
+  Scenario: To test login functionality
+    Given a user is on the login page
     When the user enters login details
-    Then login should be successful
-    And the homepage should be displayed
+    Then the homepage should be displayed
     When the user logs out
     Then log out should be successful

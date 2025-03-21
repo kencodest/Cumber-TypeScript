@@ -1,20 +1,22 @@
 import { Given, When, Then, setDefaultTimeout } from "@cucumber/cucumber";
 import { expect } from "@playwright/test"
-import { page } from "./webhooks.spec"
+import { page } from "../../corelib/corelib.spec"
+import LoginPage from "../pages/login";
 
 
-Given("a user is on the Homepage", async () => {
-    await page.goto("https://ecommerce-playground.lambdatest.io/");
+let loginPage: LoginPage;
+
+Given("a user is on the login page", async () => {
+    loginPage = new LoginPage(page);
+    await loginPage.gotoLoginPage();
 });
 
 
 When("the user enters login details", async () => {
-    await page.locator("xpath=//a[contains (.,'My account') and @data-toggle]").click(); 
-    await page.locator("xpath=//input[@id='input-email']").fill('dummy1234@gmail.com');
-    await page.locator("xpath=//input [@id='input-password']").fill('dummy1234@gmail.com');
+    await loginPage.loginToApp();
 });
 
 
-Then("login should be successful", async () => {
-    await page.locator("xpath=//input[@value='Login']").click();
+Then("log out should be successful", async () => {
+    console.log("Logout successful")
 });

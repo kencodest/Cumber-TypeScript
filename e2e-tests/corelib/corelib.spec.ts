@@ -1,5 +1,8 @@
-import { Before, After } from "@cucumber/cucumber";
+import { Before, After, setDefaultTimeout, AfterAll } from "@cucumber/cucumber";
 import { Browser, BrowserContext, Page, chromium } from "playwright";
+
+
+setDefaultTimeout(1000 * 60 *2) //this will be the timeout for running all the steps in the file
 
 
 let browser:Browser;
@@ -30,3 +33,9 @@ After( async () => {
 });
 
 export { page }
+
+// //If you do not want to export the page directly, you can wrap it in a function and 
+// // every time you want to use page, you will have to call the function
+// export function getPage(): Page {
+//     return page;
+// };
