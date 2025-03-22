@@ -30,7 +30,9 @@
     },
 
     "continueBtn": {
+        "locatorOptions": {},
         "locator": "link",
+        "description": "continue button",
         "actionOptions": {
             "name": "Continue"
         }
