@@ -4,13 +4,14 @@
   "description": "This covers Plawright automation with BDD",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "test": "cross-env env=qa cucumber-js test && npx ts-node ./index.ts"
   },
   "author": "kencodest",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "@playwright/test": "^1.51.1",
+    "cross-env": "^7.0.3",
     "cucumber-html-reporter": "^7.2.0",
     "dotenv": "^16.4.7",
     "playwright": "^1.51.1",

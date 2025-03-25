@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuite name="Cucumber" time="23.098" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-03-25T20:38:32.055Z">
+  <testcase classname="To test login functionality" name="To test login functionality" time="11.823">
+    <system-out><![CDATA[Given a user is on the login page...........................................passed
+When the user enters login details..........................................passed
+Then the homepage should be displayed.......................................passed
+When the user logs out......................................................passed
+Then log out should be successful...........................................passed]]></system-out>
+  </testcase>
+  <testcase classname="To test login functionality" name="To test login functionality" time="10.683">
+    <system-out><![CDATA[Given a user is on the login page...........................................passed
+When the user enters login details..........................................passed
+Then the homepage should be displayed.......................................passed
+When the user logs out......................................................passed
+Then log out should be successful...........................................passed]]></system-out>
+  </testcase>
+</testsuite>

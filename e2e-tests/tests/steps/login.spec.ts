@@ -9,6 +9,7 @@ let loginPage: LoginPage;
 Given("a user is on the login page", async () => {
     loginPage = new LoginPage(page);
     await loginPage.gotoLoginPage();
+    
 });
 
 

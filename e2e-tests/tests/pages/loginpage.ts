@@ -1,6 +1,7 @@
 import { Page } from "playwright";
 import * as pageLocator from "../locators/login-locators.json"
 import BasePage from "./basepage"
+import { expect } from "playwright/test";
 
 
 export default class LoginPage extends BasePage {
@@ -11,7 +12,8 @@ export default class LoginPage extends BasePage {
     
 
     async gotoLoginPage() {
-        await this.page.goto(process.env.app_url!); 
+        await this.page.goto(process.env.app_url!);
+        // expect(await this.page.title()).toEqual("Failing Test");
         // await this.page.locator(pageLocator.loginLink.locator).click(); 
         await super.click(pageLocator.loginLink);       
     };

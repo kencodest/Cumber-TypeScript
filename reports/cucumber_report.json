@@ -1,0 +1,340 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "to-test-login-functionality;to-test-login-functionality",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "To test login functionality",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 276050042
+            },
+            "embeddings": [
+              {
+                "data": "U2NlbmFyaW86IFRvIHRlc3QgbG9naW4gZnVuY3Rpb25hbGl0eSBoYXMgc3RhcnRlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user is on the login page",
+            "match": {
+              "location": "e2e-tests/tests/steps/login.spec.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6551239081
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogYSB1c2VyIGlzIG9uIHRoZSBsb2dpbiBwYWdlIGhhcyBzdGFydGVkIHJ1bm5pbmc=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogYSB1c2VyIGlzIG9uIHRoZSBsb2dpbiBwYWdlIGhhcyBzdG9wcGVkIHJ1bm5pbmc=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters login details",
+            "match": {
+              "location": "e2e-tests/tests/steps/login.spec.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1697445582
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgZW50ZXJzIGxvZ2luIGRldGFpbHMgaGFzIHN0YXJ0ZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgZW50ZXJzIGxvZ2luIGRldGFpbHMgaGFzIHN0b3BwZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the homepage should be displayed",
+            "match": {
+              "location": "e2e-tests/tests/steps/homepage.spec.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 818111829
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogdGhlIGhvbWVwYWdlIHNob3VsZCBiZSBkaXNwbGF5ZWQgaGFzIHN0YXJ0ZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogdGhlIGhvbWVwYWdlIHNob3VsZCBiZSBkaXNwbGF5ZWQgaGFzIHN0b3BwZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user logs out",
+            "match": {
+              "location": "e2e-tests/tests/steps/homepage.spec.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2446760874
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgbG9ncyBvdXQgaGFzIHN0YXJ0ZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgbG9ncyBvdXQgaGFzIHN0b3BwZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "log out should be successful",
+            "match": {
+              "location": "e2e-tests/tests/steps/login.spec.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 664541
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogbG9nIG91dCBzaG91bGQgYmUgc3VjY2Vzc2Z1bCBoYXMgc3RhcnRlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogbG9nIG91dCBzaG91bGQgYmUgc3VjY2Vzc2Z1bCBoYXMgc3RvcHBlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 29240917
+            },
+            "embeddings": [
+              {
+                "data": "U2NlbmFyaW86IFRvIHRlc3QgbG9naW4gZnVuY3Rpb25hbGl0eSBoYXMgc3RvcHBlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U2NlbmFyaW8gc3RhdHVzOiBQQVNTRUQ=",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "to-test-login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "To test login functionality",
+    "tags": [],
+    "uri": "e2e-tests/tests/features/homepage.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "to-test-login-functionality;to-test-login-functionality",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "To test login functionality",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 278502084
+            },
+            "embeddings": [
+              {
+                "data": "U2NlbmFyaW86IFRvIHRlc3QgbG9naW4gZnVuY3Rpb25hbGl0eSBoYXMgc3RhcnRlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user is on the login page",
+            "match": {
+              "location": "e2e-tests/tests/steps/login.spec.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5663925622
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogYSB1c2VyIGlzIG9uIHRoZSBsb2dpbiBwYWdlIGhhcyBzdGFydGVkIHJ1bm5pbmc=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogYSB1c2VyIGlzIG9uIHRoZSBsb2dpbiBwYWdlIGhhcyBzdG9wcGVkIHJ1bm5pbmc=",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters login details",
+            "match": {
+              "location": "e2e-tests/tests/steps/login.spec.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1677086249
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgZW50ZXJzIGxvZ2luIGRldGFpbHMgaGFzIHN0YXJ0ZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgZW50ZXJzIGxvZ2luIGRldGFpbHMgaGFzIHN0b3BwZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the homepage should be displayed",
+            "match": {
+              "location": "e2e-tests/tests/steps/homepage.spec.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 841054248
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogdGhlIGhvbWVwYWdlIHNob3VsZCBiZSBkaXNwbGF5ZWQgaGFzIHN0YXJ0ZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogdGhlIGhvbWVwYWdlIHNob3VsZCBiZSBkaXNwbGF5ZWQgaGFzIHN0b3BwZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user logs out",
+            "match": {
+              "location": "e2e-tests/tests/steps/homepage.spec.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2196559539
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgbG9ncyBvdXQgaGFzIHN0YXJ0ZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogdGhlIHVzZXIgbG9ncyBvdXQgaGFzIHN0b3BwZWQgcnVubmluZw==",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "log out should be successful",
+            "match": {
+              "location": "e2e-tests/tests/steps/login.spec.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 544707
+            },
+            "embeddings": [
+              {
+                "data": "U3RlcDogbG9nIG91dCBzaG91bGQgYmUgc3VjY2Vzc2Z1bCBoYXMgc3RhcnRlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RlcDogbG9nIG91dCBzaG91bGQgYmUgc3VjY2Vzc2Z1bCBoYXMgc3RvcHBlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 22601999
+            },
+            "embeddings": [
+              {
+                "data": "U2NlbmFyaW86IFRvIHRlc3QgbG9naW4gZnVuY3Rpb25hbGl0eSBoYXMgc3RvcHBlZCBydW5uaW5n",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U2NlbmFyaW8gc3RhdHVzOiBQQVNTRUQ=",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "to-test-login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "To test login functionality",
+    "tags": [],
+    "uri": "e2e-tests/tests/features/login.feature"
+  }
+]

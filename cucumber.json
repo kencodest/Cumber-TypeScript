@@ -9,7 +9,11 @@
       "e2e-tests/corelib/corelib.spec.ts"
   ],
     "requireModule": ["ts-node/register"],
-    "format": [],
+    "format": [
+      "json:reports/cucumber_report.json",
+      "junit:reports/junit.xml",
+      "html:reports/html_report.html"
+    ],
     "backtrace":false,
     "failFast":false,
     "forceExit":false,

@@ -1,5 +1,5 @@
 // Import necessary hooks and tools from Cucumber for test lifecycle management
-import { Before, After, setDefaultTimeout, AfterAll, BeforeAll } from "@cucumber/cucumber";
+import { Before, After, setDefaultTimeout, AfterAll, BeforeAll, BeforeStep, AfterStep } from "@cucumber/cucumber";
 
 // Import Playwright types and Chromium browser for automation
 import { Browser, BrowserContext, Page, chromium } from "playwright";
@@ -15,14 +15,18 @@ let browser: Browser;
 let browserContext: BrowserContext;
 let page: Page;
 
+
 // ------------------------
 // Hook: Before All Tests
 // ------------------------
-BeforeAll(async () => {
-    dotenv.config(); // Load environment variables from .env file
+BeforeAll(async function () {
+    dotenv.config({
+        path: `${process.cwd()}/config/.env.${process.env.env}`
+
+    }); // Load environment variables from .env file
 
     // Read the desired browser type from the environment
-    let browserType = process.env.browser;
+    let browserType = process.env.browser ?? "brave";
 
     // Launch the appropriate browser based on the environment variable
     switch (browserType) {
@@ -50,35 +54,61 @@ BeforeAll(async () => {
     }
 });
 
+
 // ------------------------
 // Hook: Before Each Scenario
 // ------------------------
-Before(async () => {
+Before(async function (scenario) {
+    
     // Create a new browser context (isolated session)
     browserContext = await browser.newContext({
         javaScriptEnabled: true    // Enable JavaScript
     });
 
+    this.attach(`Scenario: ${scenario.pickle.name} has started running`);
+
     // Open a new page (tab) in the context
     page = await browserContext.newPage();
 });
 
+
+// ------------------------
+// Hook: Before Each Step
+// ------------------------
+BeforeStep( async function (scenario) {
+    this.attach(`Step: ${scenario.pickleStep.text} has started running`);
+})
+
+
+// ------------------------
+// Hook: After Each Step
+// ------------------------
+AfterStep( async function (scenario) {
+    this.attach(`Step: ${scenario.pickleStep.text} has stopped running`);
+})
+
+
 // ------------------------
 // Hook: After Each Scenario
 // ------------------------
-After(async () => {
+After(async function (scenario) {
     // Close the current page and context after each test
     await page.close();
     await browserContext.close();
+    this
+    this.attach(`Scenario: ${scenario.pickle.name} has stopped running`);
+    this.attach(`Scenario status: ${scenario.result?.status}`);
 });
+
 
 // ------------------------
 // Hook: After All Tests
 // ------------------------
-AfterAll(async () => {
+AfterAll(async function () {
     // Close the browser completely after all tests finish
     await browser.close();
 });
+
 
 // Export the page for use in test files
 export { page };
